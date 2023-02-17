@@ -41,36 +41,47 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-gears fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></p>
-          <p>I'm fairly skilled technically and can list more but suffice to say if I need to learn something I can figure it out.</p>
+          <p>I'm fairly skilled technically as a computer engineer and hippocampal electrophysiologist and can list more things here but suffice to say if I need to learn something I can most likely figure it out.</p>
           <h5>General</h5>
           <div class="w3-round-xlarge w3-normal">
-            <p>Algorithms, Signal processing/"Data science", Machine learning</p>
+            <p>Algorithms, Signal processing/"Data science", Machine learning, Electronics prototyping</p>
           </div>
-          <h5>Neuroscience</h5>
-          <div class="w3-round-xlarge w3-normal">
+          
+          <button onclick="expandDisplay('neuroSkills')" class="w3-button"><h5>Neuroscience <i class="fa fa-caret-down"></i></h5></button>
+          <div id="neuroSkills" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p>Electrophysiological neural data acquisition, Rodent neural implant surgeries</p>
           </div>
-          <h5>Hardware & Software</h5>
-          <div class="w3-round-xlarge w3-normal">
+          <br>
+
+          <button onclick="expandDisplay('hwswSkills')" class="w3-button"><h5>Hardware & Software <i class="fa fa-caret-down"></i></h5></button>
+          <div id="hwswSkills" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p>CAD/3D Modeling/printing, Embedded systems, Realtime systems, Parallel systems, Microscale manufacturing</p>
           </div>
-          <h5>Programming Languages</h5>
-          <div class="w3-round-xlarge w3-normal">
+          <br>
+
+          <button onclick="expandDisplay('programmingLangs')" class="w3-button"><h5>Programming Languages <i class="fa fa-caret-down"></i></h5></button>
+          <div id="programmingLangs" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p>C/C++, Python, MATLAB, Java, Verilog, Assembly</p>
           </div>
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-handshake-o fa-fw w3-margin-right w3-text-teal"></i>Soft Skills</b></p>
-          <h5>Leadership</h5>
-          <div class="w3-round-xlarge w3-normal">
+          
+          
+          <button onclick="expandDisplay('leadershipStatement')" class="w3-button"><h5>Leadership <i class="fa fa-caret-down"></i></h5></button>
+          <div id="leadershipStatement" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p>In general, I've been the lab problem solver, student led meeting organizer and point of contact for any fires (literal or metaphorical) that need to be put out. This is both for technical or emotional support or general guiadance. Coworker references are available upon request.</p>
           </div>
-          <h5>Teaching & Mentorship</h5>
-          <div class="w3-round-xlarge w3-normal">
-            <p>My strongest passions are teaching/mentorship and outreach work. I've voluntairly held office hours, study sessions and taught a graduate course. I've mentored 4 undergraduate students (2 currently PhD students at CMU & Duke, 1 medical student at UTD, 1 software engineer at Microsoft) as well as multiple underserved students who went on to become first generation college students through <a href="https://tmcbrainstem.org/" target="_blank">BrainSTEM</a>.</p>
+          <br>
+
+          <button onclick="expandDisplay('mentorshipStatement')" class="w3-button"><h5>Teaching & Mentoring <i class="fa fa-caret-down"></i></h5></button>
+          <div id="mentorshipStatement" class="w3-container w3-hide w3-round-xlarge w3-normal">
+            <p>My strongest passions are teaching/mentorship and outreach work. I've voluntairly held office hours, study sessions and taught a graduate course. I've mentored 4 undergraduate students (2 currently PhD students at CMU & Duke, 1 medical student starting in the fall, 1 software engineer at Microsoft) as well as multiple underserved students who went on to become first generation college students through <a href="https://tmcbrainstem.org/" target="_blank">BrainSTEM</a>.</p>
           </div>
-          <h5>Technical Communication & Organization</h5>
-          <div class="w3-round-xlarge w3-normal">
+          <br>
+
+          <button onclick="expandDisplay('commOrgStatement')" class="w3-button"><h5>Communication <i class="fa fa-caret-down"></i></h5></button>
+          <div id="commOrgStatement" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p><a href="https://tasteofscience.org/houston-production" target="_blank">Taste of Science Houston</a>, <a href="https://twitter.com/RiceNeuro/status/1305646150800769031" target="_blank">BrainSTEM</a></p>
           </div>
           <br>
@@ -100,23 +111,52 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Experience</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity"><b>Graduate Researcher | <a href="http://rnel.rice.edu" target="_blank">Realtime Neural Engineering Lab</a></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Primary research: Interrogating hippocampal sharp-wave ripples with custom-built, open-source, sharp-wave ripple disruption system for closed-loop experiments.</p>
+          <p>Advisor: Dr. Caleb Kemere</p>
+          <p>Affiliation: Rice University</p>
+          <button class="w3-button" onclick="expandDisplay('OtherProjects')"><p>Other projects <i class="fa fa-caret-down"></i></p></button>
+            <div class="w3-container w3-hide" id='OtherProjects'>  
+              <ul>
+                <li>Video tracking with Deep Neural Networks & heuristics based statistical methods</li>
+                <li>Sharp-wave ripple detection with Deep Neural Networks in attempts to find predictive features that precede sharp-wave ripple events</li>
+                <li>Rodent elevator</li>
+                <li>Magnetoelectric film scalp enclosed implantation</li>
+                <li>Trocar microscale electronics subcutaneous implantation</li>
+              </ul>
+            </div>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity"><b>Undergraduate Researcher | Sensor Networks & Complex Manufacturing Systems Monitoring Lab</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2014 - May 2015</h6>
+          <p>Projects</p>
+          <ul>
+            <li>Point of care health informatics for proactive epilepsy seizure alert system algorithm and wearable EEG development.</li>
+            <li>Obstructive sleep apnea prediction and prevention system wearable ECG development.</li>
+          </ul>
+          <p>Advisors: Drs. Satish Bukkapatnam & Trung Le</p>
+          <p>Affiliation: Texas A&M University</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          <h5 class="w3-opacity"><b>Undergraduate Researcher | Biosensing Systems and Materials Lab</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2013 - May 2015</h6>
+          <p>Develop, test and validate autonomous system for nanofilm deposition technique.</p>
+          <p>Advisors: Drs. Mike McShane & Ashvin Nagaraja</p>
+          <p>Affiliation: Texas A&M University</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Senior Thesis</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2014 - May 2015</h6>
+          <p>Develop, implement, test and validate novel dyamic multi-factor security protocol for credit card purchasing.</p>
+          <p>Advisors: Dr. Sunil Khatri</p>
+          <p>Affiliation: Texas A&M University</p>
+          <hr>
         </div>
       </div>
 
@@ -149,48 +189,84 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
       </div>
 
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-heart fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Outreach & Volunteer Experience</h2>
+        <div class="w3-container">
+          <button class="w3-button" onclick="expandDisplay('BrainSTEMWork')"><h5 class="w3-opacity"><b>BrainSTEM </b><i class="fa fa-caret-down"></i></h5></button> 
+          <div class="w3-container w3-hide" id="BrainSTEMWork">
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p>Developed and modified lesson plans to teach STEM to middile school and high school kids in resiliant yet underserved communities in Houston. Using the mysteries of the brain as a fundamental source of inspiration to spark wonder and curiousity within students across a diversity of populations, I've led as well as helped teach weekly hands-on neuroscience lab-based STEM lessons to these middle and high schools in lower socioeconomic status neighborhoods within the city of Houston. Represented the Houston Chapter at the <a href="https://www.abstractsonline.com/pp8/#!/10619/session/3228" target="_blank">Society for Neuroscience Conference in 2022 to speak about Reaching Diverse Populations</a>. Made video lessons as well as support videos. Brought on students from underserved communities as paid interns and served as a mentor to a number of first generation college students.</p>
+          </div>
+        </div>
+        <div class="w3-container">
+          <button class="w3-button" onclick="expandDisplay('TOSWork')"><h5 class="w3-opacity"><b>Taste of Science Houston </b><i class="fa fa-caret-down"></i></h5></button> 
+          <div class="w3-container w3-hide" id="TOSWork">  
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2019 - Jun 2020</h6>
+            <p>Helped coordinate and organize various science and technology events for the genral public around the city of Houston at different bars with different speakers for each event. During COVID-19 lockdown, organized and coordinated virtual events for dissemination of scientific knowledge to the general public about the COVID-19 virus with speakers and experts from the Texas Medical Center. Served as a speaker for an event as well as host & editor of podcast <a href="https://open.spotify.com/show/3uNhpeRNtoTYSgxeKrPjyr" target="_blank">Taste of Science After Dark</a>.</p>
+          </div>
+        </div>
+        <div class="w3-container">
+          <button class="w3-button" onclick="expandDisplay('COVIDClinicWork')"><h5 class="w3-opacity"><b>COVID Vaccine Clinic Coordinator </b><i class="fa fa-caret-down"></i></h5></button> 
+          <div class="w3-container w3-hide" id="COVIDClinicWork">
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2021 - Dec 2021</h6>
+            <p>Organized and coordinated volunteers from hospitals in the Texas Medical Center (primarily Houston Methodist nurses) in weekly after work hours vaccination clinics for people in underserved communities in the city of Houston. Onsite work consisted mostly of listening and understanding those who are hesitant to be vaccinated against COVID-19 and offering them the opportunity to do so if they are unable to during regular work hours. </p>
+          </div>
+        </div>
+        <div class="w3-container">
+          <button class="w3-button" onclick="expandDisplay('FFLVolunteer')"><h5 class="w3-opacity"><b>Friends for Life Animal Rescue Volunteer </b><i class="fa fa-caret-down"></i></h5></button> 
+          <div class="w3-container w3-hide" id="FFLVolunteer">
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - Jan 2017</h6>
+            <p>Animal and shelter care along with behavioral training and rehabilitation of animals (primarily dogs). </p>
+          </div>          
+        </div>
+      </div>
+
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-commenting fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>What Others Are Saying...</h2>
         <div class="w3-container">
-            <h5 class="w3-opacity"><b>Selected Course Reviews</b> for <a href="http://neuralsignalprocessing.github.io" target="_blank">neural signal processing and machine learning</a></h5>
+          <button class="w3-button" onclick="expandDisplay('courseReviews')"><h5 class="w3-opacity"><b>Selected Course Reviews</b> for <a href="http://neuralsignalprocessing.github.io" target="_blank">BIOE/ELEC 548</a> neural signal processing and machine learning <i class="fa fa-caret-down"></i></h5></button>
+          <div class="w3-container w3-hide" id="courseReviews">
             <div class="w3-panel w3-leftbar w3-light-grey">
-                <p class="w3-large w3-serif w3-opacity">
-                <i>"I always struggle with teachers explaining complicated models in class, but Shayok generally gave us a good big picture, and if I didn't understand something I knew what to look for after class or go to office hours."</i></p>
+                  <p class="w3-large w3-serif w3-opacity">
+                  <i>"I always struggle with teachers explaining complicated models in class, but Shayok generally gave us a good big picture, and if I didn't understand something I knew what to look for after class or go to office hours."</i></p>
+              </div>
+              <div class="w3-panel w3-leftbar w3-light-grey">
+                  <p class="w3-large w3-serif w3-opacity">
+                  <i>"One of the best instructors I had at Rice! Shayok created a great atmosphere in the classroom and always helped with the homeworks/project"</i></p>
+              </div>
+              <div class="w3-panel w3-leftbar w3-light-grey">
+                  <p class="w3-large w3-serif w3-opacity">
+                  <i>"From the first day of class, it was clear that Shay was an exceptional instructor...Not only is Shay an expert in his field, but he is also a highly engaging and enthusiastic teacher. He consistently brings energy and passion to the classroom, which makes the learning experience that much more enjoyable..."</i></p>
+              </div>
+              <div class="w3-panel w3-leftbar w3-light-grey">
+                  <p class="w3-large w3-serif w3-opacity">
+                  <i>"What I really liked about Shay was how willing he was to go out of his way to explain things to students and how much he truly cared about us. All instructors get better the more times they teach a course, but this proclivity of really caring for students and going out of your way to support them is something most instructors never develop. Shay had this from Day1...For example, Shay met with me multiple times outside of class, provided me with extra resources, and even helped walked through my code with me to help me realize what I was doing wrong."</i></p>
+              </div>
             </div>
-            <div class="w3-panel w3-leftbar w3-light-grey">
-                <p class="w3-large w3-serif w3-opacity">
-                <i>"One of the best instructors I had at Rice! Shayok created a great atmosphere in the classroom and always helped with the homeworks/project"</i></p>
-            </div>
-            <div class="w3-panel w3-leftbar w3-light-grey">
-                <p class="w3-large w3-serif w3-opacity">
-                <i>"From the first day of class, it was clear that Shay was an exceptional instructor...Not only is Shay an expert in his field, but he is also a highly engaging and enthusiastic teacher. He consistently brings energy and passion to the classroom, which makes the learning experience that much more enjoyable..."</i></p>
-            </div>
-            <div class="w3-panel w3-leftbar w3-light-grey">
-                <p class="w3-large w3-serif w3-opacity">
-                <i>"What I really liked about Shay was how willing he was to go out of his way to explain things to students and how much he truly cared about us. All instructors get better the more times they teach a course, but this proclivity of really caring for students and going out of your way to support them is something most instructors never develop. Shay had this from Day1...For example, Shay met with me multiple times outside of class, provided me with extra resources, and even helped walked through my code with me to help me realize what I was doing wrong."</i></p>
-            </div>
-        </div>
+          </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Coworkers, colleagues, superiors</b> (mostly pulled from slack...)</h5>
-            <div class="w3-panel w3-leftbar w3-light-grey">
-                <p class="w3-large w3-serif w3-opacity">
-                <i>"Shay is very professorial."</i></p>
-            </div>
-            <div class="w3-panel w3-leftbar w3-light-grey">
-                <p class="w3-large w3-serif w3-opacity">
-                <i>"Ah Shay... just a walking joy spreader"</i></p>
-            </div>
-            <div class="w3-panel w3-leftbar w3-light-grey">
-                <p class="w3-large w3-serif w3-opacity">
-                <i>"Shay, you're amazing. Thank you so much :)"</i></p>
-            </div>
-            <div class="w3-panel w3-leftbar w3-light-grey">
-                <p class="w3-large w3-serif w3-opacity">
-                <i>"I couldn't be more joyful to learn from you...I believe in YOU to demand a PhD!!!!!"</i></p>
-            </div>
-            <div class="w3-panel w3-leftbar w3-light-grey">
-                <p class="w3-large w3-serif w3-opacity">
-                <i>"I hope you never forget that you really did make a positive impact in my life!"</i></p>
+          <button class="w3-button" onclick="expandDisplay('colleagueReviews')"><h5 class="w3-opacity"><b>Coworkers, colleagues, superiors</b> (mostly pulled from slack...) <i class="fa fa-caret-down"></i></h5></button>
+          <div class="w3-container w3-hide" id="colleagueReviews">  
+              <div class="w3-panel w3-leftbar w3-light-grey">
+                  <p class="w3-large w3-serif w3-opacity">
+                  <i>"Shay is very professorial."</i></p>
+              </div>
+              <div class="w3-panel w3-leftbar w3-light-grey">
+                  <p class="w3-large w3-serif w3-opacity">
+                  <i>"Ah Shay... just a walking joy spreader"</i></p>
+              </div>
+              <div class="w3-panel w3-leftbar w3-light-grey">
+                  <p class="w3-large w3-serif w3-opacity">
+                  <i>"Shay, you're amazing. Thank you so much :)"</i></p>
+              </div>
+              <div class="w3-panel w3-leftbar w3-light-grey">
+                  <p class="w3-large w3-serif w3-opacity">
+                  <i>"I couldn't be more joyful to learn from you...I believe in YOU to demand a PhD!!!!!"</i></p>
+              </div>
+              <div class="w3-panel w3-leftbar w3-light-grey">
+                  <p class="w3-large w3-serif w3-opacity">
+                  <i>"I hope you never forget that you really did make a positive impact in my life!"</i></p>
+              </div>
             </div>
         </div>
       </div>
@@ -208,5 +284,18 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <p>Powered by Amilles Coffee, my pet rabbits, herd of cattle in my office and <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
+<script>
+  function expandDisplay(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      x.previousElementSibling.className += " w3-teal";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+      x.previousElementSibling.className = 
+      x.previousElementSibling.className.replace(" w3-teal", "");
+    }
+  }
+</script>
 </body>
 </html>
