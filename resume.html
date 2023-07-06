@@ -9,6 +9,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+.worddiv {
+  white-space:normal;
+  word-wrap:break-word;
+}
+
 </style>
 </head>
 <body class="w3-light-grey">
@@ -37,6 +43,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Houston, Tx</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>shayokdutta@gmail.com | shayok.dutta@rice.edu</p>
           <p><i class="fa fa-google fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://scholar.google.com/citations?user=N4-BFqgAAAAJ" target="_blank">Google scholar page</a></p>
+          <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="http://github.com/shayokdutta" target="_blank">Github</a></p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>713-***-****</p>
           <hr>
 
@@ -47,19 +54,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <p>Algorithms, Signal processing/"Data science", Machine learning, Electronics prototyping</p>
           </div>
           
-          <button onclick="expandDisplay('neuroSkills')" class="w3-button"><h5>Neuroscience <i class="fa fa-caret-down"></i></h5></button>
+          <button onclick="expandDisplay('neuroSkills')" class="w3-button worddiv"><h5>Neuroscience <i class="fa fa-caret-down"></i></h5></button>
           <div id="neuroSkills" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p>Electrophysiological neural data acquisition, Rodent neural implant surgeries</p>
           </div>
           <br>
 
-          <button onclick="expandDisplay('hwswSkills')" class="w3-button"><h5>Hardware & Software <i class="fa fa-caret-down"></i></h5></button>
+          <button onclick="expandDisplay('hwswSkills')" class="w3-button worddiv"><h5>Hardware & Software <i class="fa fa-caret-down"></i></h5></button>
           <div id="hwswSkills" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p>CAD/3D Modeling/printing, Embedded systems, Realtime systems, Parallel systems, Microscale manufacturing</p>
           </div>
           <br>
 
-          <button onclick="expandDisplay('programmingLangs')" class="w3-button"><h5>Programming Languages <i class="fa fa-caret-down"></i></h5></button>
+          <button onclick="expandDisplay('programmingLangs')" class="w3-button worddiv"><h5>Programming Languages <i class="fa fa-caret-down"></i></h5></button>
           <div id="programmingLangs" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p>C/C++, Python, MATLAB, Java, Verilog, Assembly</p>
           </div>
@@ -68,19 +75,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p class="w3-large w3-text-theme"><b><i class="fa fa-handshake-o fa-fw w3-margin-right w3-text-teal"></i>Soft Skills</b></p>
           
           
-          <button onclick="expandDisplay('leadershipStatement')" class="w3-button"><h5>Leadership <i class="fa fa-caret-down"></i></h5></button>
+          <button onclick="expandDisplay('leadershipStatement')" class="w3-button worddiv"><h5>Leadership <i class="fa fa-caret-down"></i></h5></button>
           <div id="leadershipStatement" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p>In general, I've been the lab problem solver, student led meeting organizer and point of contact for any fires (literal or metaphorical) that need to be put out. This is both for technical or emotional support or general guiadance. Coworker references are available upon request.</p>
           </div>
           <br>
 
-          <button onclick="expandDisplay('mentorshipStatement')" class="w3-button"><h5>Teaching & Mentoring <i class="fa fa-caret-down"></i></h5></button>
+          <button onclick="expandDisplay('mentorshipStatement')" class="w3-button worddiv"><h5>Teaching & Mentoring <i class="fa fa-caret-down"></i></h5></button>
           <div id="mentorshipStatement" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p>My strongest passions are teaching/mentorship and outreach work. I've voluntairly held office hours, study sessions and taught a graduate course. I've mentored 4 undergraduate students (2 currently PhD students at CMU & Duke, 1 medical student starting in the fall, 1 software engineer at Microsoft) as well as multiple underserved students who went on to become first generation college students through <a href="https://tmcbrainstem.org/" target="_blank">BrainSTEM</a>.</p>
           </div>
           <br>
 
-          <button onclick="expandDisplay('commOrgStatement')" class="w3-button"><h5>Communication <i class="fa fa-caret-down"></i></h5></button>
+          <button onclick="expandDisplay('commOrgStatement')" class="w3-button worddiv"><h5>Communication <i class="fa fa-caret-down"></i></h5></button>
           <div id="commOrgStatement" class="w3-container w3-hide w3-round-xlarge w3-normal">
             <p><a href="https://tasteofscience.org/houston-production" target="_blank">Taste of Science Houston</a>, <a href="https://twitter.com/RiceNeuro/status/1305646150800769031" target="_blank">BrainSTEM</a></p>
           </div>
@@ -114,17 +121,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Graduate Researcher | <a href="http://rnel.rice.edu" target="_blank">Realtime Neural Engineering Lab</a></b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Primary research: Interrogating hippocampal sharp-wave ripples with custom-built, open-source, sharp-wave ripple disruption system for closed-loop experiments.</p>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - <span class="w3-tag w3-teal w3-round">May 2023</span></h6>
+          <p><a href="https://slides.com/shayokdutta/phdoffense" target="_blank">Primary research</a>: Interrogating hippocampal sharp-wave ripples with custom-built, <a href="https://iopscience.iop.org/article/10.1088/1741-2552/aae90e" target="_blank">open-source, sharp-wave ripple disruption system</a> for closed-loop experiments.</p>
           <p>Advisor: Dr. Caleb Kemere</p>
           <p>Affiliation: Rice University</p>
-          <button class="w3-button" onclick="expandDisplay('OtherProjects')"><p>Other projects <i class="fa fa-caret-down"></i></p></button>
+          <button class="w3-button worddiv" onclick="expandDisplay('OtherProjects')"><p>Other projects <i class="fa fa-caret-down"></i></p></button>
             <div class="w3-container w3-hide" id='OtherProjects'>  
               <ul>
-                <li>Video tracking with Deep Neural Networks & heuristics based statistical methods</li>
+                <li><a href="https://github.com/shayokdutta/BehavioralTracking" target="_blank">Video tracking with Deep Neural Networks & heuristics based statistical methods</a></li>
                 <li>Sharp-wave ripple detection with Deep Neural Networks in attempts to find predictive features that precede sharp-wave ripple events</li>
-                <li>Rodent elevator</li>
-                <li>Magnetoelectric film scalp enclosed implantation</li>
+                <li><a href="https://github.com/kemerelab/Elevator" target="_blank">Rodent elevator</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S0896627320303652" target="_blank">Magnetoelectric film scalp enclosed implantation & behavioral experiments/analysis</a></li>
                 <li>Trocar microscale electronics subcutaneous implantation</li>
               </ul>
             </div>
@@ -192,28 +199,28 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-heart fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Outreach & Volunteer Experience</h2>
         <div class="w3-container">
-          <button class="w3-button" onclick="expandDisplay('BrainSTEMWork')"><h5 class="w3-opacity"><b>BrainSTEM </b><i class="fa fa-caret-down"></i></h5></button> 
+          <button class="w3-button" onclick="expandDisplay('BrainSTEMWork')"><h5 class="w3-opacity worddiv"><b>BrainSTEM </b><i class="fa fa-caret-down"></i></h5></button> 
           <div class="w3-container w3-hide" id="BrainSTEMWork">
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
             <p>Developed and modified lesson plans to teach STEM to middile school and high school kids in resiliant yet underserved communities in Houston. Using the mysteries of the brain as a fundamental source of inspiration to spark wonder and curiousity within students across a diversity of populations, I've led as well as helped teach weekly hands-on neuroscience lab-based STEM lessons to these middle and high schools in lower socioeconomic status neighborhoods within the city of Houston. Represented the Houston Chapter at the <a href="https://www.abstractsonline.com/pp8/#!/10619/session/3228" target="_blank">Society for Neuroscience Conference in 2022 to speak about Reaching Diverse Populations</a>. Made video lessons as well as support videos. Brought on students from underserved communities as paid interns and served as a mentor to a number of first generation college students.</p>
           </div>
         </div>
         <div class="w3-container">
-          <button class="w3-button" onclick="expandDisplay('TOSWork')"><h5 class="w3-opacity"><b>Taste of Science Houston </b><i class="fa fa-caret-down"></i></h5></button> 
+          <button class="w3-button" onclick="expandDisplay('TOSWork')"><h5 class="w3-opacity worddiv"><b>Taste of Science Houston </b><i class="fa fa-caret-down"></i></h5></button> 
           <div class="w3-container w3-hide" id="TOSWork">  
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2019 - Jun 2020</h6>
             <p>Helped coordinate and organize various science and technology events for the genral public around the city of Houston at different bars with different speakers for each event. During COVID-19 lockdown, organized and coordinated virtual events for dissemination of scientific knowledge to the general public about the COVID-19 virus with speakers and experts from the Texas Medical Center. Served as a speaker for an event as well as host & editor of podcast <a href="https://open.spotify.com/show/3uNhpeRNtoTYSgxeKrPjyr" target="_blank">Taste of Science After Dark</a>.</p>
           </div>
         </div>
         <div class="w3-container">
-          <button class="w3-button" onclick="expandDisplay('COVIDClinicWork')"><h5 class="w3-opacity"><b>COVID Vaccine Clinic Coordinator </b><i class="fa fa-caret-down"></i></h5></button> 
+          <button class="w3-button" onclick="expandDisplay('COVIDClinicWork')"><h5 class="w3-opacity worddiv"><b>COVID Vaccine Clinic Coordinator </b><i class="fa fa-caret-down"></i></h5></button> 
           <div class="w3-container w3-hide" id="COVIDClinicWork">
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2021 - Dec 2021</h6>
             <p>Organized and coordinated volunteers from hospitals in the Texas Medical Center (primarily Houston Methodist nurses) in weekly after work hours vaccination clinics for people in underserved communities in the city of Houston. Onsite work consisted mostly of listening and understanding those who are hesitant to be vaccinated against COVID-19 and offering them the opportunity to do so if they are unable to during regular work hours. </p>
           </div>
         </div>
         <div class="w3-container">
-          <button class="w3-button" onclick="expandDisplay('FFLVolunteer')"><h5 class="w3-opacity"><b>Friends for Life Animal Rescue Volunteer </b><i class="fa fa-caret-down"></i></h5></button> 
+          <button class="w3-button" onclick="expandDisplay('FFLVolunteer')"><h5 class="w3-opacity worddiv"><b>Friends for Life Animal Rescue Volunteer </b><i class="fa fa-caret-down"></i></h5></button> 
           <div class="w3-container w3-hide" id="FFLVolunteer">
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - Jan 2017</h6>
             <p>Animal and shelter care along with behavioral training and rehabilitation of animals (primarily dogs). </p>
@@ -221,10 +228,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
       </div>
 
-      <div class="w3-container w3-card w3-white">
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-commenting fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>What Others Are Saying...</h2>
         <div class="w3-container">
-          <button class="w3-button" onclick="expandDisplay('courseReviews')"><h5 class="w3-opacity"><b>Selected Course Reviews</b> for <a href="http://neuralsignalprocessing.github.io" target="_blank">BIOE/ELEC 548</a> neural signal processing and machine learning <i class="fa fa-caret-down"></i></h5></button>
+          <button class="w3-button" onclick="expandDisplay('courseReviews')"><h5 class="w3-opacity worddiv"><b>Selected Course Reviews</b> for <a href="http://neuralsignalprocessing.github.io" target="_blank">BIOE/ELEC 548</a> neural signal processing and machine learning <i class="fa fa-caret-down"></i></h5></button>
           <div class="w3-container w3-hide" id="courseReviews">
             <div class="w3-panel w3-leftbar w3-light-grey">
                   <p class="w3-large w3-serif w3-opacity">
@@ -245,7 +252,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             </div>
           </div>
         <div class="w3-container">
-          <button class="w3-button" onclick="expandDisplay('colleagueReviews')"><h5 class="w3-opacity"><b>Coworkers, colleagues, superiors</b> (mostly pulled from slack...) <i class="fa fa-caret-down"></i></h5></button>
+          <button class="w3-button" onclick="expandDisplay('colleagueReviews')"><h5 class="w3-opacity worddiv"><b>Coworkers, colleagues, superiors</b> (mostly pulled from slack...) <i class="fa fa-caret-down"></i></h5></button>
           <div class="w3-container w3-hide" id="colleagueReviews">  
               <div class="w3-panel w3-leftbar w3-light-grey">
                   <p class="w3-large w3-serif w3-opacity">
