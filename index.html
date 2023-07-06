@@ -8,26 +8,29 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+.mySlides {display: none;}
+</style>
 <body id="ShayHome">
 
 <!-- Navbar -->
 <div class="w3-display-container w3-opacity w3-hover-opacity-off">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
-  <a href="http://shayokdutta.github.io/resume" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Resume/CV</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
-  <a href="#pubbies" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pubbies & Posters</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-gray">Contact</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-button" title="Notifications">About Me <i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-          <a href="#" class="w3-bar-item w3-button">Personal</a>
-          <a href="#" class="w3-bar-item w3-button">Professional | Teaching</a>
-          <a href="#" class="w3-bar-item w3-button">Bunnies</a>
-        </div>
-    </div>
- </div>
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+    <a href="http://shayokdutta.github.io/resume" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Resume/CV</a>
+    <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
+    <a href="#pubbies" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pubbies & Posters</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-gray">Contact</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-button" title="Notifications">About Me <i class="fa fa-caret-down"></i></button>     
+          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+            <a href="#" class="w3-bar-item w3-button">Personal</a>
+            <a href="#" class="w3-bar-item w3-button">Professional | Teaching</a>
+            <a href="#" class="w3-bar-item w3-button">Bunnies</a>
+          </div>
+      </div>
+  </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
@@ -44,7 +47,8 @@
   <img src="images/background.svg" style="width:100%">
   
   <div class="w3-display-topmiddle w3-padding-16">
-    <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+    <button class="w3-button w3-block w3-teal w3-hide-large w3-hide-medium" onclick="document.getElementById('AboutMeBrief').style.display='block'">Shayok "Shay" Dutta</i></button>
+    <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large w3-hide-small">
       <h1 class="w3-xlarge w3-block w3-teal w3-round w3-center">Shayok "Shay" Dutta, PhD</h1>
       <hr class="w3-opacity">
       <blockquote class="w3-center">I'm just an investment the world is going to underestimate</blockquote>
@@ -87,6 +91,49 @@
     <img src="images/signature_block.svg" style="width:100%">
   </div>
   
+</div>
+
+<div id="AboutMeBrief" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-black w3-padding-large w3-round-large w3-teal"> 
+      <span onclick="document.getElementById('AboutMeBrief').style.display='none'"
+      class="w3-button w3-display-topright">×</span>
+      <h1 class="w3-xlarge w3-block w3-teal w3-round w3-center">Shayok "Shay" Dutta, PhD</h1>
+      <blockquote class="w3-center">I'm just an investment the world is going to underestimate</blockquote>
+      <p>
+        Shay is currently a post-doctoral fellow 
+        in the Department of Neurosurgery at University
+        of Colorado Anschutz Medical Campus in the 
+        BIOElectrics lab under the direction of Dr. 
+        Cristin Welle. He is studying VNS and
+        it's applications in cognitive flexibility and
+        mental health in both pre-clinical and clinical 
+        models. 
+        <br><br>
+        During his PhD, Shay mastered the ability to 
+        talk about himself in the third person and 
+        worked under guidance of Dr. Caleb Kemere in
+        the Realtime Neural Engineering Lab at Rice 
+        University where he was trained up as a rodent
+        hippocapal electrophysiologist while coming from
+        a Electrical and Computer Engineering background.
+        His work was in interrogating hippocampal sharp-wave 
+        ripples in realtime within a object recognition
+        task leading to novel insights (in prep.). See 
+        Research and Publications & Posters sections. 
+        <br><br>
+        Outside of work, Shay enjoys cuddling his two
+        big bun buns while they actively try to escape 
+        his smothering love. He is also very active being
+        a former athlete and enjoys cuddling other animals
+        ranging from cows (moo!) to dogs (bork!) as well!
+        His niece, who is a cat, seems to enjoy sitting
+        on his lap while he makes a website. Shay also often 
+        times stares into the existential void. See About 
+        Me section for more.
+      </p>
+    </header>
+  </div>
 </div>
 
 <!-- Work Row -->
@@ -179,6 +226,30 @@ function openNav() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+
+</script>
+
+<script>
+  // Get the modal
+  var modal1 = document.getElementById('AboutMeBrief');
+  var modal2 = document.getElementById('id02');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal1) {
+      modal1.style.display = "none";
+    }
+    // if (event.target == modal2) {
+    //   modal2.style.display = "none";
+    // }
+  }
+  document.addEventListener("keydown", ({key}) => {
+    if(key == "Escape"){
+      modal1.style.display = "none"
+      // modal2.style.display = "none"
+    }
+  })
 </script>
 
 </body>
