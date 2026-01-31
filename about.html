@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Shayok Dutta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #161b22;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #2ea043; /* Github Green / Matrix vibe */
+            --accent-glow: rgba(46, 160, 67, 0.15);
+            --border: #30363d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 8px var(--accent-glow);
+        }
+
+        /* --- Layout & Typography --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.05rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(120deg, #fff, #8b949e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        .subtitle {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* --- Sections --- */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* --- Special Elements --- */
+        .quote-box {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--text-primary);
+            border-left: none;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .quote-box span {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .teaching-philosophy {
+            background: linear-gradient(145deg, var(--card-bg), #1c2128);
+        }
+
+        .code-block {
+            font-family: 'JetBrains Mono', monospace;
+            background: #0d1117;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border);
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        /* --- Animations --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+            filter: blur(10px);
+            transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            filter: blur(0);
+        }
+        
+        /* Navigation Button */
+        .nav-back {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            z-index: 100;
+            background: rgba(15, 17, 21, 0.8);
+            padding: 10px 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid var(--border);
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="nav-back">← Back to Home</a>
+
+    <div class="container">
+        <header>
+            <div class="subtitle reveal active">The Engineer. The Scientist. The Human.</div>
+            <h1 class="reveal active" style="transition-delay: 0.1s;">Who is Shay?</h1>
+            <p class="reveal active" style="transition-delay: 0.2s; max-width: 600px;">
+                From the football field to the neuroscience lab, my journey is defined by one question: 
+                What are the biological limits of healing, and how can we engineer past them?
+            </p>
+        </header>
+
+        <section id="origin">
+            <div class="card reveal">
+                <h2>The Origin: Resilience & Repairs</h2>
+                <p>
+                    My path to engineering didn't start in a classroom—it started with a shoulder injury. In 2012, and again in 2015, I underwent Latarjet procedures to repair 360-degree labrum tears. I was an 18-year-old football player with a singular goal: heal fast enough to play again.
+                </p>
+                <p>
+                    I felt the despair of having something I loved stripped away, but I also found agency in that pain. I got hurt doing what I loved, and I would do it again in a heartbeat. But during those long weeks in a sling, I became obsessed with a question: <strong>Why?</strong>
+                </p>
+                <p>
+                    I read scientific articles on shoulder rehab protocols, challenging the "six-week" dogma. What is the biological limitation? How can we accelerate this? Around this time, the game <em>Deus Ex: Human Revolution</em> was released. It introduced me to the concept of neural prosthetics—the idea that we could engineer our way past biological failure.
+                </p>
+            </div>
+        </section>
+
+        <section id="science">
+            <div class="card reveal">
+                <h2>The Scientist: Decoding the Mind</h2>
+                <p>
+                    The fiction of <em>Deus Ex</em> inspired me, but the reality of graduate school grounded me. I realized that while we weren't ready for sci-fi level prosthetics due to biocompatibility issues, the real frontier was <strong>neural decoding</strong>.
+                </p>
+                <p>
+                    I pivoted from motor prosthetics to the internal world of the brain. My PhD work focused on sharp-wave ripples—the brain's mechanism for memory consolidation and learning. But as I decoded the brain's signals, I began to struggle with my own.
+                </p>
+            </div>
+        </section>
+
+        <section id="mission">
+            <div class="quote-box reveal">
+                <h1 style="font-size: 2.5rem; margin-bottom: 20px;">"How can I make life more wonderful?"</h1>
+                <p>This is the question that drives everything I do.</p>
+            </div>
+            
+            <div class="card reveal">
+                <p>
+                    Like many in their 20s, I faced my own battles with obsessive thoughts, Generalized Anxiety Disorder (GAD), and depression. I found myself asking: If the brain is a machine for survival, why does it produce solutions that aren't productive for the individual?
+                </p>
+                <p>
+                    My research goal is to bridge the gap between <strong>neuroscience</strong> and <strong>wellbeing</strong>. I aim to study mental health disorders (anxiety, depression, OCD) and engineer therapeutic interventions—combining technological feedback with psychotherapy—to not just "fix" pathology, but to promote cerebral wellness.
+                </p>
+            </div>
+        </section>
+
+        <section id="open-science">
+            <div class="card reveal">
+                <h2>Open Science & Structural Transparency</h2>
+                
+                <p>
+                    In a global structure where scientific information is frequently siloed for profit, the act of making research data and protocols accessible is more than just best practice—it is a form of systemic activism. My commitment to <strong>Open Science</strong> is rooted in the conviction that barriers to entry in biotechnology and engineering—whether they are financial paywalls, proprietary "gatekeeping," or opaque methodology—actively slow the progress of medical innovation and exclude diverse perspectives.
+                </p>
+                <p>
+                    By providing open-access resources, I aim to:
+                </p>
+                <ul style="list-style: none; margin-left: 0; margin-bottom: 20px; color: var(--text-secondary);">
+                    <li style="margin-bottom: 10px;">
+                        <span style="color: var(--accent);">• Democratize Specialized Knowledge:</span> Ensuring that surgical protocols and engineering frameworks are available to researchers regardless of their institutional funding.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <span style="color: var(--accent);">• Ensure Data Integrity:</span> Maintaining transparency in data analysis to allow for rigorous peer validation and reproducibility.
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                        <span style="color: var(--accent);">• Reduce Redundancy:</span> Sharing "failed" protocols or specific surgical nuances to prevent other researchers from wasting time and resources on known hurdles.
+                    </li>
+                </ul>
+
+                <div class="code-block">
+                    $ git clone https://github.com/shayokdutta/vns_remyelination<br>
+                    $ git clone https://github.com/shayokdutta/surgery_records<br>
+                    $ git clone https://github.com/shayokdutta/RippleDetectionAnalysis<br>
+                    $ git clone https://github.com/shayokdutta/MagStim
+                </div>
+                <p style="margin-top: 20px;">
+                    Active open-source research repositories:
+                </p>
+                <ul style="list-style: none; margin-left: 0; color: var(--text-secondary);">
+                    <li style="margin-bottom: 10px;">• <a href="https://github.com/shayokdutta/surgery_records"><strong>Surgery Records:</strong></a> Open protocols for neuroelectronics procedures.</li>
+                    <li style="margin-bottom: 10px;">• <a href="https://github.com/shayokdutta/vns_remyelination"><strong>VNS Remyelination:</strong></a> Paired Vagus Nerve Stimulation drives remyelination.</li>
+                    <li style="margin-bottom: 10px;">• <a href="https://github.com/shayokdutta/RippleDetectionAnalysis"><strong>Ripple Detection Analysis:</strong></a> Analysis for real-time hippocampal sharp-wave ripple detection.</li>
+                    <li style="margin-bottom: 10px;">• <a href="https://github.com/shayokdutta/MagStim"><strong>MagStim Analysis:</strong></a> Behavioral experiment and analysis for electromagnetic stimulation.</li>
+                </ul>
+
+                <br>
+                <p style="border-top: 1px solid var(--border); padding-top: 20px;">
+                    <strong>A Note on Humility:</strong><br>
+                    I have had the privilege of working with mathematicians, engineers, and statisticians far more brilliant than myself. I understand that my work is never finished and rarely perfect. If you have insights on how to analyze this data differently, or if you spot mistakes in my protocols, please reach out. I want to learn, improve, and explore further. Curiosity and the willingness to adapt to new information are vital for our progress as a community.
+                </p>
+            </div>
+        </section>
+
+        <section id="teaching">
+            <div class="card teaching-philosophy reveal">
+                <h2>Teaching: A Non-Violent Approach</h2>
+                <p>
+                    My philosophy in the classroom mirrors my philosophy in the lab: <strong>Mistakes are data points, not failures.</strong>
+                </p>
+                <p>
+                    <em>"If someone makes a mistake in life or academics and they are judged, evaluated, and punished without an opportunity to correct their mistake, how does that foster learning?"</em>
+                </p>
+                <ul style="list-style: none; margin-left: 0; margin-top: 20px; color: var(--text-secondary);">
+                    <li style="margin-bottom: 10px;">✅ <strong>Regrading for Full Credit:</strong> If you can explain your mistake and fix it, you deserve the points. Mastery matters more than speed.</li>
+                    <li style="margin-bottom: 10px;">✅ <strong>Soft Deadlines:</strong> Stress kills creativity. I prioritize mental wellbeing and robust exploration over arbitrary time crunches.</li>
+                    <li style="margin-bottom: 10px;">✅ <strong>Team Effort:</strong> The course staff should be here to HELP TEACH. Not evaluate/judge.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="human">
+            <div class="card reveal">
+                <h2>The Human: Logic & Life</h2>
+                <p>
+                    I am more than the sum of my research. I am a former explosive athelte (football player and sprinter---neither of which required a high VO2 max) who transitioned into long-distance running (completed 2 halfie marathons so far!) and rock climbing. Why? Because I love the friction of a new challenge, especially when it involves mastering things I wasn't naturally built for.
+                </p>
+                <p>
+                    My home life is its own kind of laboratory. I spend my time cleaning up after and training my pet rabbits to perform complex, multi-level tasks and—in my most ambitious behavioral experiment yet—training a Boxer/Pitbull mix puppy with my girlfriend to abandon her prey drive and become a calming protector for the bunnies.
+                </p>
+                <p>
+                    <strong>Other variables in the equation:</strong>
+                </p>
+                <ul style="list-style: none; margin-left: 0; color: var(--text-secondary);">
+                    <li style="margin-bottom: 10px;">🦅 <strong>Diehard Philadelphia Eagles Fan. GO BIRDS!</strong> (And an active 76ers fan. Josh Harris sell the team pls.).</li>
+                    <li style="margin-bottom: 10px;">🎁 <strong>The "Over-Engineer":</strong> I once built a robust 3D holographic display just to give my girlfriend a Christmas gift. Definitely did not take me 5ever to make.</li>
+                    <li style="margin-bottom: 10px;">🍳 <strong>The Cook:</strong> Currently mastering the kitchen. My signature dish is Kronk's Spinach Puffs from <em>The Emperor's New Groove</em>.</li>
+                    <li style="margin-bottom: 10px;">🐮 <strong>Favorite Animal:</strong> Cows. Moo.</li>
+                    <li style="margin-bottom: 10px;">&#9749 <strong>Coffee recs?</strong> Please reach out to me!</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer style="text-align: center; padding: 40px; color: var(--text-secondary); font-size: 0.9rem;">
+            &copy; <span id="year"></span> Shayok "Shay" Dutta, PhD. Built with transparency, &#x1F407&#x1F407, and a &#128021*.<br><span style="font-size: 0.7 rem;">*The puppy broke my lappy screen and I have to replace it now. Opening a pet-savings account for pet related damages is my one and only relationship advice.</span>
+        </footer>
+    </div>
+
+    <script>
+        // Set current year automatically
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // SCROLL ANIMATION LOGIC
+        const observerOptions = {
+            threshold: 0.15, 
+            rootMargin: "-50px" 
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                } else {
+                    entry.target.classList.remove('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
