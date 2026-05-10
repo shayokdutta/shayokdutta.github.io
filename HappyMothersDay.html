@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Day Note</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fdfbf7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .paper {
+            background-color: #fff;
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        .paper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 40px;
+            bottom: 0;
+            width: 2px;
+            background-color: rgba(255, 0, 0, 0.2);
+            z-index: 0;
+        }
+        .text-content {
+            font-family: 'Dancing Script', cursive;
+            font-size: 26px;
+            line-height: 1.8;
+            color: #2b2b2b;
+            position: relative;
+            z-index: 1;
+            padding-left: 20px;
+        }
+        .cursor {
+            display: inline-block;
+            width: 2px;
+            height: 26px;
+            background-color: #333;
+            animation: blink 0.7s infinite;
+            vertical-align: text-bottom;
+            margin-left: 2px;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .replay-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-family: sans-serif;
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+        .replay-btn:hover {
+            background-color: #d0d0d0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="paper">
+        <div id="note" class="text-content" style="display: inline;"></div><span class="cursor" id="cursor"></span>
+    </div>
+
+    <button class="replay-btn" onclick="startWriting()">Replay Animation</button>
+
+    <script>
+        const segments = [
+            { text: "Happy Mother’s Day!\\n\\nI've wanted to let you know this for a while. When I first started coming around, I often felt pretty awkward and nervous, but seeing the four of us dressed up in ", format: "normal" },
+            { text: "ridiculous", format: "strike" },
+            { text: " — actually, let’s go with legendary — costumes and winning the best-dressed award at that 80s party completely changed things for me. When you said, \"Welcome to the family\" that day, it gave me such a wonderful sense of belonging.\\n\\nI also have to thank you for your famous slip-up last May 4th. I know you felt embarrassed about calling me AJ’s boyfriend before we had officially talked about it, but honestly, it was the best accidental nudge ever. I was way too chicken to bring it up myself, so I am forever grateful for that happy accident! Thank you for making me feel like part of the family even before I knew how to ask.\\n\\nLove,\\nShay", format: "normal" }
+        ];
+
+        let segmentIndex = 0;
+        let charIndex = 0;
+        const noteContainer = document.getElementById('note');
+        const cursor = document.getElementById('cursor');
+        let currentSpan = null;
+        let writingTimeout = null;
+
+        function startWriting() {
+            clearTimeout(writingTimeout);
+            noteContainer.innerHTML = '';
+            segmentIndex = 0;
+            charIndex = 0;
+            cursor.style.display = 'inline-block';
+            writeCharacter();
+        }
+
+        function writeCharacter() {
+            if (segmentIndex >= segments.length) {
+                cursor.style.display = 'none';
+                return;
+            }
+
+            const segment = segments[segmentIndex];
+
+            if (charIndex === 0) {
+                currentSpan = document.createElement('span');
+                if (segment.format === 'strike') {
+                    currentSpan.style.textDecoration = 'line-through';
+                    currentSpan.style.color = '#888';
+                }
+                noteContainer.appendChild(currentSpan);
+            }
+
+            if (charIndex < segment.text.length) {
+                let char = segment.text.charAt(charIndex);
+                
+                // Handle newlines
+                if (char === '\\\\' && segment.text.charAt(charIndex + 1) === 'n') {
+                     currentSpan.appendChild(document.createElement('br'));
+                     charIndex += 2;
+                     writingTimeout = setTimeout(writeCharacter, 150); // slight pause on new line
+                     return;
+                }
+                
+                currentSpan.appendChild(document.createTextNode(char));
+                charIndex++;
+                
+                // Randomize typing speed for a natural feel (between 30ms and 70ms)
+                let typingSpeed = Math.random() * 40 + 30;
+                writingTimeout = setTimeout(writeCharacter, typingSpeed);
+            } else {
+                segmentIndex++;
+                charIndex = 0;
+                // Pause slightly between segments
+                writingTimeout = setTimeout(writeCharacter, 200);
+            }
+        }
+
+        // Start automatically
+        window.onload = startWriting;
+    </script>
+</body>
+</html>
